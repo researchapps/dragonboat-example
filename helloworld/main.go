@@ -47,9 +47,10 @@ var (
 	// initial nodes count is fixed to three, their addresses are also fixed
 	// these are the initial member nodes of the Raft cluster.
 	addresses = []string{
-		"localhost:63001",
-		"localhost:63002",
-		"localhost:63003",
+		"flux-sample-0.flux-service.default.svc.cluster.local:63001",
+		"flux-sample-1.flux-service.default.svc.cluster.local:63002",
+		"flux-sample-2.flux-service.default.svc.cluster.local:63003",
+		"flux-sample-4.flux-service.default.svc.cluster.local:63004",
 	}
 	errNotMembershipChange = errors.New("not a membership change request")
 )
